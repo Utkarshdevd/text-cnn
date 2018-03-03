@@ -1,0 +1,8 @@
+Datasets
+1. Taviop
+    - reddit
+    - stupidstuff
+    - wocka
+
+2. shortjokes from kaggle
+3. qa-jokes from kaggle
