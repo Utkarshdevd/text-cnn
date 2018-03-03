@@ -1,4 +1,4 @@
-# CharCnn_Keras
+# CharCnn in Keras
 
 
 ![MIT](https://img.shields.io/badge/license-MIT-blue.svg)
