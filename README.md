@@ -20,7 +20,7 @@ Negative samples are,
 
 1. Twitter tweets with #news
 
-Dependencies
+## Dependencies
 
 1. Keras >2.0
 2. tensorflow 1.4.0
