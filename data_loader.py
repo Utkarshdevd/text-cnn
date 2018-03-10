@@ -29,7 +29,7 @@ class Data(object):
         self.shuffled_data = self.data
         
     def shuffleData(self):
-        np.random.seed(25)
+        np.random.seed(235)
         data_size = len(self.data)
         shuffle_indices = np.random.permutation(np.arange(data_size))
         self.shuffled_data = self.data[shuffle_indices]
@@ -46,12 +46,15 @@ class Data(object):
         end_index = data_size if self.batch_size == 0 else min((batch_num + 1) * self.batch_size, data_size)
         batch_texts = self.shuffled_data[start_index:end_index]
         batch_indices = []
-        one_hot = np.eye(self.no_of_classes, dtype='int64')
         classes = []
         for c, s in batch_texts:
             batch_indices.append(self.strToIndexs(s))
-            c = int(c) - 1
-            classes.append(one_hot[c])
+            c = int(c)
+            if c == 0:
+                classes.append(np.zeros(1, dtype='int64'))
+            else:
+                classes.append(np.ones(1, dtype='int64'))
+                                
         return np.asarray(batch_indices, dtype='int64'), np.asarray(classes)
 
     def getAllData(self):
@@ -62,10 +65,14 @@ class Data(object):
         batch_indices = []
         one_hot = np.eye(self.no_of_classes, dtype='int64')
         classes = []
+        batch_texts = self.data
         for c, s in batch_texts:
             batch_indices.append(self.strToIndexs(s))
-            c = int(c) - 1
-            classes.append(one_hot[c])
+            c = int(c)
+            if c == 0:
+                classes.append(np.zeros(1, dtype='int64'))
+            else:
+                classes.append(np.ones(1, dtype='int64'))
         return np.asarray(batch_indices, dtype='int64'), np.asarray(classes)    
         
     def strToIndexs(self, s):
@@ -87,10 +94,10 @@ if __name__ == '__main__':
     data = Data("data/generated_data/dataset.hdf5")
     data.loadData()
     data.shuffleData()
+    data.getAllData()
     with open("test.vec", "w") as fo:
         for i in range(data.getLength()):
             c = data.data[i][0]
             txt = data.data[i][1]
             vec = ",".join(map(str, data.strToIndexs(txt)))
-            
             fo.write("{}\t{}\n".format(c, vec))
