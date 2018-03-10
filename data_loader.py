@@ -63,7 +63,6 @@ class Data(object):
         end_index = data_size 
         batch_texts = self.data[start_index:end_index]
         batch_indices = []
-        one_hot = np.eye(self.no_of_classes, dtype='int64')
         classes = []
         batch_texts = self.data
         for c, s in batch_texts:
