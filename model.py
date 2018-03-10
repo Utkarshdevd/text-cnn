@@ -53,9 +53,7 @@ for train, test in kfold.split(X, Y.reshape(Y.shape[0],)):
         if not cl[2] is None:
             x = MaxPooling1D(cl[2])(x)
 
-
     x = Flatten()(x)
-
 
     #Fully connected layers
 
@@ -64,20 +62,13 @@ for train, test in kfold.split(X, Y.reshape(Y.shape[0],)):
         x = ThresholdedReLU(th)(x)
         x = Dropout(0.5)(x)
 
-
     predictions = Dense(num_of_classes, activation='sigmoid')(x)
-
-    model = Model(input=inputs, output=predictions)
-
+    model = Model(inputs=inputs, outputs=predictions)
     optimizer = Adam()
-
     model.compile(optimizer=optimizer, loss='binary_crossentropy')
-
-        
     print("Built")
 
     print("Training ...")
+    model.fit(X[train], Y[train], epochs=config.training.epochs, verbose=1, batch_size=config.batch_size, validation_data=(X[test], Y[test]))
 
-    model.fit(X[train], Y[train], nb_epoch=config.training.epochs, verbose=1, batch_size=config.batch_size, validation_data=(X[test], Y[test]))
-    print("HERE:::::", X[train][0:2])
     print("Done!.")
