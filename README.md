@@ -20,6 +20,14 @@ Negative samples are,
 
 1. Twitter tweets with #news
 
+Dependencies
+
+1. Keras >2.0
+2. tensorflow 1.4.0
+3. sklearn
+4. h5py
+5. pandas
+
 ## License
 
 Copyright (c) 2018 Utkarsh Dwivedi
