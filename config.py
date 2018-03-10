@@ -27,7 +27,7 @@ class Config(object):
     alphabet_size = len(alphabet)
     l0 = 1014
     batch_size = 128
-    num_of_classes = 4
+    num_of_classes = 1
     dropout_p = 0.5
     train_data_source = 'data/generated_data/dataset.hdf5'
     kfolds = 5
