@@ -31,5 +31,4 @@ for row in generated_data:
         txt = txt + " " + re.sub("^\s*(.-)\s*$", "%1", s).replace("\\n", "\n")
     data.append ((int(row[0]), txt))
 pd = pandas.DataFrame(data)
-print(type(pd.at[0,1]))
 pd.to_hdf('data/generated_data/dataset.hdf5', 'dataset_1', mode='w', complevel=9, complib='bzip2')
