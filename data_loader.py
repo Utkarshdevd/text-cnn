@@ -92,11 +92,12 @@ if __name__ == '__main__':
     data.loadData()
     data.shuffleData()
     data.getAllData()
-    with open("test.vec", "w") as fo:
+    with open("test_indices.vec", "w") as fo:
         for i in range(data.getLength()):
             c = data.data[i][0]
             txt = data.data[i][1]
             vec = ",".join(map(str, data.strToIndexs(txt)))
             if saveTxt:
-                vec = txt
-            fo.write("{}\t{}\n".format(c, vec))
+                fo.write("{}\t{}\n".format(txt, c))
+            fo.write("{}\t{}\n".format(vec, c))
+
