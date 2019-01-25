@@ -1,8 +1,6 @@
 # -*- coding: utf-8 -*-
 import pickle
 import re
-import numpy as np
-import h5py
 import pandas
 
 generated_data = []

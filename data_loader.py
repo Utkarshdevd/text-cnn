@@ -1,7 +1,4 @@
-import numpy as np 
-import re 
-import csv
-import h5py
+import numpy as np
 import pandas as pd
 
 class Data(object):
