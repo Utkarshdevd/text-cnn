@@ -91,6 +91,7 @@ class Data(object):
 
 if __name__ == '__main__':
     data = Data("data/generated_data/dataset.hdf5")
+    saveTxt = True
     data.loadData()
     data.shuffleData()
     data.getAllData()
@@ -99,4 +100,6 @@ if __name__ == '__main__':
             c = data.data[i][0]
             txt = data.data[i][1]
             vec = ",".join(map(str, data.strToIndexs(txt)))
+            if saveTxt:
+                vec = txt
             fo.write("{}\t{}\n".format(c, vec))
