@@ -88,7 +88,7 @@ class Data(object):
 
 if __name__ == '__main__':
     data = Data("data/generated_data/dataset.hdf5")
-    saveTxt = True
+    saveTxt = False
     data.loadData()
     data.shuffleData()
     data.getAllData()
