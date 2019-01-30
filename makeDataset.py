@@ -5,8 +5,11 @@ import pandas
 
 generated_data = []
 data = []
+
+
+
 # negative samples
-picklePath = "data/short/datasets/reuters_headlines.pickle"
+picklePath = "data/joke-dataset2/reuters_headlines.pickle"
 with open(picklePath, "rb") as pickleFile:
     pickleData = pickle.load(pickleFile)
     print(pickleData[0])
@@ -15,7 +18,7 @@ with open(picklePath, "rb") as pickleFile:
         
 
 # positive samples
-picklePath = "data/short/datasets/humorous_oneliners.pickle"
+picklePath = "data/joke-dataset2/humorous_oneliners.pickle"
 with open(picklePath, "rb") as pickleFile:
     pickleData = pickle.load(pickleFile)
     print(pickleData[0])
