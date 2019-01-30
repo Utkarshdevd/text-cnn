@@ -23,6 +23,7 @@ class Data(object):
     def loadData(self):
         pdFile = pd.read_hdf(self.data_source)
         self.data = pdFile.as_matrix()
+        print(self.data)
         self.shuffled_data = self.data
         
     def shuffleData(self):
