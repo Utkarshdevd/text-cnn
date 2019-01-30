@@ -1,84 +1,69 @@
-{"jokes":[{
-  "path":"data/joke_dataset",
-  "filename":"reddit_json",
-  "type":"json",
-  "textTerm":"title, body",
-  "scoreTerm":"score",
-  "concat":";"
-},
 {
-  "path":"data/joke_dataset",
-  "filename":"stupidstuff",
-  "type":"json",
-  "textTerm":"body",
-  "scoreTerm":"rating",
-  "concat":""
-},
-{
-  "path":"data/joke_dataset",
-  "filename":"wocka",
-  "type":"json",
-  "textTerm":"body",
-  "scoreTerm":"",
-  "concat":""
-},
-{
-  "path":"data/joke_dataset2",
-  "filename":"humorous_oneliners",
-  "type":"pickle",
-  "textTerm":"",
-  "scoreTerm":"",
-  "concat":""
-},
-{
-  "path":"data/joke_dataset2",
-  "filename":"oneliners_incl_doubles",
-  "type":"pickle",
-  "textTerm":"",
-  "scoreTerm":"",
-  "concat":""
-},
-{
-  "path":"data",
-  "filename":"jokes",
-  "type":"csv",
-  "textTerm":"",
-  "scoreTerm":"",
-  "concat":""
-},
-{
-  "path":"data",
-  "filename":"shortjokes",
-  "type":"csv",
-  "textTerm":"",
-  "scoreTerm":"",
-  "concat":""
-}],
-
-"notJokes":[
-  {
-  "path":"data/joke_dataset2",
-  "filename":"proverbs",
-  "type":"pickle",
-  "textTerm":"",
-  "scoreTerm":"",
-  "concat":""
-},
-{
-  "path":"data/joke_dataset2",
-  "filename":"reuters_headlines",
-  "type":"pickle",
-  "textTerm":"",
-  "scoreTerm":"",
-  "concat":""
-},
-{
-  "path":"data/joke_dataset2",
-  "filename":"wiki_sentences",
-  "type":"pickle",
-  "textTerm":"",
-  "scoreTerm":"",
-  "concat":""
-}
+  "jokes":[
+    {
+      "path":"data\/joke-dataset",
+      "filename":"reddit_jokes",
+      "type":"json",
+      "textTerm":"title,body",
+      "scoreTerm":"score",
+      "concat":";"
+    },
+    {
+      "path":"data\/joke-dataset",
+      "filename":"stupidstuff",
+      "type":"json",
+      "textTerm":"body",
+      "scoreTerm":"rating"
+    },
+    {
+      "path":"data\/joke-dataset",
+      "filename":"wocka",
+      "type":"json",
+      "textTerm":"body"
+    },
+    {
+      "path":"data\/joke-dataset2",
+      "filename":"humorous_oneliners",
+      "type":"pickle"
+    },
+    {
+      "path":"data\/joke-dataset2",
+      "filename":"oneliners_incl_doubles",
+      "type":"pickle"
+    },
+    {
+      "path":"data",
+      "filename":"jokes",
+      "type":"csv",
+      "textTerm":"Question,Answer",
+      "concat":";"
+    },
+    {
+      "path":"data",
+      "filename":"shortjokes",
+      "type":"csv",
+      "textTerm":"Joke",
+      "concat":";"
+    }
+  ],
+  "notJokes":[
+    {
+      "path":"data\/joke-dataset2",
+      "filename":"proverbs",
+      "type":"pickle",
+      "textTerm":"",
+      "scoreTerm":"",
+      "concat":""
+    },
+    {
+      "path":"data\/joke-dataset2",
+      "filename":"reuters_headlines",
+      "type":"pickle"
+    },
+    {
+      "path":"data\/joke-dataset2",
+      "filename":"wiki_sentences",
+      "type":"pickle"
+    }
   ]
 }
