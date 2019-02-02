@@ -64,6 +64,12 @@
       "path":"data\/joke-dataset2",
       "filename":"wiki_sentences",
       "type":"pickle"
+    },
+    {
+      "path":"data\/joke-dataset2",
+      "filename":"splitabcaa",
+      "type":"csv",
+      "textTerm":"headline_text"
     }
   ]
 }
