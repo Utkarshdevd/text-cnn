@@ -159,7 +159,7 @@
       <workItem from="1548826067381" duration="3734000" />
       <workItem from="1548831368765" duration="10519000" />
       <workItem from="1549131657339" duration="1109000" />
-      <workItem from="1549133180033" duration="1448000" />
+      <workItem from="1549133180033" duration="1727000" />
     </task>
     <task id="LOCAL-00001" summary="added boolean to save txt intead of indices">
       <created>1548382030069</created>
@@ -277,7 +277,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22818000" />
+    <option name="totallyTimeSpent" value="23097000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -302,11 +302,12 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32998884" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49946237" weight="0.25195095" />
+      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49946237" visible="true" weight="0.25195095" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50053763" side_tool="true" weight="0.32998884" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49946237" visible="true" weight="0.3567447" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49946237" weight="0.3567447" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.32998884" />
+      <window_info anchor="right" x="0" y="0" width="430" height="855" id="Documentation" side_tool="true" visible="true" weight="0.3295699" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
